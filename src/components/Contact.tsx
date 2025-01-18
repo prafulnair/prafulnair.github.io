@@ -1,4 +1,4 @@
-import React, { FormEvent } from 'react';
+import React from 'react';
 import { FiMail } from 'react-icons/fi';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       id="contact"
       className="py-20 border-t border-gray-200 dark:border-gray-700"
     >
-        <h2 className="text-3xl font-bold mb-6"><a href="mailto:you@example.com" className="flex items-center gap-2">
+        <h2 className="text-3xl font-bold mb-6"><a href="mailto:prafulworkspace@gmail.com" className="flex items-center gap-2">
             <FiMail />
                 Contact Me
                 </a>
