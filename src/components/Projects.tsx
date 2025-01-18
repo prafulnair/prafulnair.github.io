@@ -4,17 +4,17 @@ import ProjectCard from './ProjectCard.tsx';
 const Projects: React.FC = () => {
   const demoProjects = [
     {
-      title: 'Minimal Portfolio',
-      description: 'A clean and modern portfolio showcasing my design skills.',
+      title: 'Scalable GCP Data Pipeline for Amazon Book Reviews',
+      description: 'Developed a data streaming pipeline using Google Cloud Functions, Cloud Storage, and BigQuery to efficiently process and analyze Amazon Book Reviews data. Demonstrated auto-scaling and concurrency, along with real-time ETL transformations for large datasets.',
       link: '#'
     },
     {
-      title: 'E-commerce App',
-      description: 'A full-stack, responsive online store built with React and Node.',
+      title: 'FeatureHub - A Feature Request Platform',
+      description: 'Built for the Financial Systems Team at Valsoft during my Internship,  this full-stack, responsive Feature Request Website allows users to log in, submit feature requests and bug reports, and discuss ideas with fellow teammates. Think of it like a more professional, civil version of Reddit for product feedback.',
       link: '#'
     },
     {
-      title: 'Landing Page',
+      title: '',
       description: 'A slick marketing landing page with a strong focus on conversions.',
       link: '#'
     },
