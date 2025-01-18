@@ -55,7 +55,7 @@ const About: React.FC = () => {
           <div className="md:w-2/3">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
               I’m a new grad from <span className="font-semibold">Concordia University</span> in Montreal, 
-              driven by a passion for creating clean, impactful solutions. 
+              driven by a passion for creating clean, impactful applications that are Reliable and Scalable. 
               Highly focused on <span className="font-semibold">Requirement Elicitation</span> and 
               <span className="font-semibold"> Communication</span> when it comes to building a product—because 
               understanding and delivering exactly what’s needed is half the battle. Whether I’m tackling 
@@ -66,10 +66,10 @@ const About: React.FC = () => {
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
               During my internship at <span className="font-semibold">Valsoft</span> as a Developer Intern 
-              for the Financial Systems Team, I dove into <span className="font-semibold">JavaScript, SuiteScript, and Python</span> 
-              to enhance their NetSuite ERP system and automate key processes. From parsing hefty invoice 
-              data with <span className="font-semibold">XML</span> and <span className="font-semibold">Freemarker</span> 
-              to building out React-and-Flask-based functionalities on <span className="font-semibold">AWS</span>, 
+              for the Financial Systems Team, I dove into <span className="font-semibold">JavaScript, SuiteScript, and Python </span> 
+               to enhance their NetSuite ERP system and automate key processes. From parsing hefty invoice 
+              data with <span className="font-semibold">XML</span> and <span className="font-semibold">Freemarker </span> 
+              to building out FullStack Application using React, Python(Flask) and making it <span className="font-semibold">AWS </span> deployment ready , 
               it was a blend of front-end, back-end, and everything in between—just how I like it.
             </p>
 
