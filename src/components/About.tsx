@@ -74,9 +74,8 @@ const About: React.FC = () => {
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I’m off the clock, you’ll probably spot me reading books, exploring story-rich video games, 
-              or enjoying multiple cups of coffee. If that sounds like your vibe, let’s connect and 
-              <span className="font-semibold"> build something amazing</span> together.
+              Outside Work, I like reading books; currrently exploring Albert Camus's work along with some Chekhov, exploring story-rich video games, 
+              and enjoying multiple cups of coffee.
             </p>
           </div>
         </div>
