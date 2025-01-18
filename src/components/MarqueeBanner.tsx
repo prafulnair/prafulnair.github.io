@@ -6,7 +6,8 @@ const MarqueeBanner: React.FC = () => {
       {/* The scrolling text container */}
       <div className="whitespace-nowrap animate-marquee">
         <span className="mr-8">Work in Progress</span>
-        <span className="mr-8">Heads up! My Portfolio Website is undergoing complete overhaul -- because I believe in continuous improvement. Dont let this stop you from reaching out. Please feel free to drop a message on LinkedIn or at prafulworkspac@gmail.com</span>
+        <span className="mr-8">Heads up! My portfolio website is getting a major overhaul—because I believe in continuous improvement. 
+        Don’t let that stop you from reaching out. Feel free to message me on LinkedIn or email me at prafulworkspace@gmail.com!</span>
         {/* <span className="mr-8">Things are work in progress!</span> */}
         {/* Repeat or modify the messages as desired */}
       </div>

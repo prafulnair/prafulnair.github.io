@@ -14,8 +14,8 @@ const Projects: React.FC = () => {
       link: '#'
     },
     {
-      title: '',
-      description: 'A slick marketing landing page with a strong focus on conversions.',
+      title: 'FlowForge: Ford-Fulkerson Network Flow Optimization',
+      description: 'A Python-based solution implementing the Ford-Fulkerson Algorithm with four augmenting path strategies (SAP, DFS-like, MaxCap, and Random). It features random graph generation and optional visualization, offering a comprehensive look at network flow optimization and performance analysis.',
       link: '#'
     },
   ];
