@@ -12,10 +12,15 @@ export default {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 }
-        }
+        },
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
-        fadeIn: 'fadeIn 0.5s ease-in-out'
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        marquee: 'marquee 30s linear infinite',
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Or any other Google Font

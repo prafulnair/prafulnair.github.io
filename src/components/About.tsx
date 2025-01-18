@@ -14,7 +14,7 @@ const About: React.FC = () => {
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
         When I&apos;m not coding, you&apos;ll probably find me reading design blogs, 
-        exploring new frameworks, or sipping on a fresh cup of coffee. 
+        exploring new frameworks, or taking photographs of this beautiful world. 
         Let&apos;s create something amazing together!
       </p>
     </section>
