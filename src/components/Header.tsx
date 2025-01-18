@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, darkMode }) => {
     <header className="w-full py-4 flex items-center justify-between">
       <div className="text-2xl font-bold">
         <a href="#hero" className="hover:opacity-80 transition-opacity">
-          MyPortfolio
+          Praful Nair
         </a>
       </div>
       <nav className="space-x-4">
