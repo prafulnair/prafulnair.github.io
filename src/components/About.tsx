@@ -55,7 +55,7 @@ const About: React.FC = () => {
           <div className="md:w-2/3">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
               I’m  <span className="font-semibold">New Grad, Software Engineer</span> in Montreal, 
-              I like and aspire to develop creating clean, impactful applications that are Reliable and Scalable. 
+              I like and aspire to develop clean, impactful applications that are Reliable and Scalable. 
               Highly focused on <span className="font-semibold">Requirement Elicitation</span> and 
               <span className="font-semibold"> Communication</span> when it comes to building a product—because 
               understanding and delivering exactly what’s needed is half the battle. I focus on the 
