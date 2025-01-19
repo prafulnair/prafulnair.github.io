@@ -13,7 +13,7 @@
 // export default Footer;
 
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (

@@ -54,29 +54,16 @@ const About: React.FC = () => {
           {/* Text Column */}
           <div className="md:w-2/3">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              I’m a new grad from <span className="font-semibold">Concordia University</span> in Montreal, 
-              driven by a passion for creating clean, impactful applications that are Reliable and Scalable. 
+              I’m  <span className="font-semibold">New Grad, Software Engineer</span> in Montreal, 
+              I like and aspire to develop creating clean, impactful applications that are Reliable and Scalable. 
               Highly focused on <span className="font-semibold">Requirement Elicitation</span> and 
               <span className="font-semibold"> Communication</span> when it comes to building a product—because 
-              understanding and delivering exactly what’s needed is half the battle. Whether I’m tackling 
-              complex problems or capturing life’s unscripted moments with my camera, I focus on the 
+              understanding and delivering exactly what’s needed is half the battle. I focus on the 
               details that bring ideas to life. Working hard, staying kind, and making a real difference—those 
               are the principles I live by.
-            </p>
+            </p> 
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              During my internship at <span className="font-semibold">Valsoft</span> as a Developer Intern 
-              for the Financial Systems Team, I dove into <span className="font-semibold">JavaScript, SuiteScript, and Python </span> 
-               to enhance their NetSuite ERP system and automate key processes. From parsing hefty invoice 
-              data with <span className="font-semibold">XML</span> and <span className="font-semibold">Freemarker </span> 
-              to building out FullStack Application using React, Python(Flask) and making it <span className="font-semibold">AWS </span> deployment ready , 
-              it was a blend of front-end, back-end, and everything in between—just how I like it.
-            </p>
-
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Outside Work, I like reading books; currrently exploring Albert Camus's work along with some Chekhov, exploring story-rich video games, 
-              and enjoying multiple cups of coffee.
-            </p>
+            <span className="font-semibold">Learn More About Me.</span>
           </div>
         </div>
       </div>
