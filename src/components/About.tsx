@@ -28,6 +28,8 @@
 // export default About;
 
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 const About: React.FC = () => {
   return (
@@ -63,7 +65,9 @@ const About: React.FC = () => {
               are the principles I live by.
             </p> 
 
-            <span className="font-semibold">Learn More About Me.</span>
+            <Link to="/about-me" className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
+  Learn More
+</Link>
           </div>
         </div>
       </div>
