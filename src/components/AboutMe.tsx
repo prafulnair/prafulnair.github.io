@@ -126,7 +126,7 @@ const AboutMe: React.FC = () => {
           <div className="md:w-1/3 flex flex-col items-center text-center space-y-4">
             {/* Profile Image */}
             <img
-              src="public/profile_photo2.jpeg"  // Replace with your actual image path
+              src="profile_photo2.jpeg"  // Replace with your actual image path
               alt="Praful Nair"
               className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg"
             />
