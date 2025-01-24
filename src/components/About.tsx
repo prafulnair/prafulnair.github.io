@@ -27,8 +27,9 @@
 
 // export default About;
 
+// AMAZXING
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 const About: React.FC = () => {
@@ -64,10 +65,10 @@ const About: React.FC = () => {
               details that bring ideas to life. Working hard, staying kind, and making a real difference—those 
               are the principles I live by.
             </p> 
-{/* 
+
             <Link to="/about-me" className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
   Learn More
-</Link> */}
+</Link>
           </div>
         </div>
       </div>

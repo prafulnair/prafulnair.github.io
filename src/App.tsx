@@ -7,9 +7,8 @@ import Home from './components/Home';
 import { AnimatePresence, motion } from 'framer-motion';
 import AboutMe from './components/AboutMe';
 import AllProjectsPage from './components/AllProjectsPage';
-import AllProjectsItem from './components/AllProjectsItem';
 import ProjectDetailPage from './components/ProjectDetailPage';
-
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -33,7 +32,9 @@ function App() {
 
       {/* AnimatePresence for page transitions */}
       <AnimatePresence mode="wait">
+      <ScrollToTop />
         <Routes location={location} key={location.pathname}>
+        
           <Route
             path="/"
             element={
