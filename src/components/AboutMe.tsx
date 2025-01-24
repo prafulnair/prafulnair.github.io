@@ -82,7 +82,8 @@ const AboutMe: React.FC = () => {
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 I started learning Programming right from High-school, starting with C, C++ and Visual Basics.
                 I got started Bachelor's of Engineering in Computer Engineering at University of Mumbai (Pillai College of Engineering) in 2016.
-                In 2019-2020, I collaborated with Professor K.S Charumathi and did research on lesser known cyber defence mechanism - Honeypots and built our own small scale Honeypot and tested on small data in a Lab environment
+                In 2019-2020, I collaborated with Professor K.S Charumathi and did research on lesser known cyber defence mechanism - Honeypots and built our own small scale Honeypot and tested on small data in a Lab environment. 
+                <p>Covid Pandemic halted the world, stopping my college when I was in my last term. I graduated admist the second wave in India, in January 2021.</p>
               </p>
             </div>
 
@@ -124,7 +125,7 @@ const AboutMe: React.FC = () => {
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 "Be Kind and Help others whenever you can".
                 Beyond code, I believe in continuous learning, mentorship, and using 
-                technology for positive change. I am a strong proponent of the belief that technology should simplify human life and aid in human society. I’m driven by the vision of making a 
+                technology for positive change. I am a strong proponent of the belief that technology should simplify human life and aid human society. I’m driven by the vision of making a 
                 meaningful impact—both locally and globally—through thoughtful, sustainable 
                 solutions that lift up the human experience. 
               </p>
@@ -140,6 +141,70 @@ const AboutMe: React.FC = () => {
         </h2>
         {/* A vertical timeline example */}
         <div className="relative border-l border-gray-300 dark:border-gray-700">
+
+        <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
+              {/* Could be an icon or a small text, e.g. "1" */}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2024 September - Joined Valsoft as Intern Developer
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+            Joined Valsoft as an Intern Developer and worked with their Financial Systems team to work on enhancing the ERP System - NetSuite and helped them build FeatureHub, a Feature Request Platform for the internal
+            employees to submit new feature requests, suggestions, report and track bugs and issues and discuss ideas with teammates. 
+            </p>
+          </div>
+
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
+              {/* Could be an icon or a small text, e.g. "1" */}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2024 June - Graduated with Masters in Applied Computer Science from Concordia University
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              Graduated with 3.65 GPA and a wealth of knowledge in building technical solutions
+            </p>
+          </div>
+
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
+              {/* Could be an icon or a small text, e.g. "1" */}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2023 September - Started Working as a Graduate Teaching Assistant at Concordia University
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              Managed over 14 teams, 80+ undergrad students, teaching them in Labs and Tutorials, helping them build Web Applications and collaborating through Agile Principles.
+            </p>
+          </div>
+
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
+              {/* Could be an icon or a small text, e.g. "1" */}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2022 September - Started my Masters in Applied Computer Science at Concordia University ! 
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              New city, new country, new University, new people. It was Exciting.
+            </p>
+          </div>
+
+        
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
+              {/* Could be an icon or a small text, e.g. "1" */}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2021 May - Started working as Volunteer at United Nations Online Volunteering Program
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              I worked with two organization registered with the UN. I was a researcher, editor and proof reader for "World Changing Center" who helped
+              kids with Autism and their family. I also worked with Malalo Sports Foundation, based in Zambia, helping with their fund-raiser activities.
+            </p>
+          </div>
+
           {/* Timeline Item 1 */}
           <div className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
@@ -149,7 +214,7 @@ const AboutMe: React.FC = () => {
               2021 - Completed Bachelor&apos;s in Computer Engineering
             </h3>
             <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Graduated with distinction, focusing on distributed systems &amp; security.
+              Graduated with distinction, 8.42 GPA / 10, focusing on Software Engineering &amp; Advanced System Security.
             </p>
           </div>
 
@@ -162,7 +227,7 @@ const AboutMe: React.FC = () => {
               2019 - Cybersecurity Internship
             </h3>
             <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Worked on honeypot research, learning hands-on threat detection methods.
+              Minor Internship, learning Penetration Testing.
             </p>
           </div>
 
@@ -172,11 +237,10 @@ const AboutMe: React.FC = () => {
               {/* Could be an icon or "3" */}
             </span>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2022 - Moved to Montreal &amp; Began Masters
+              2016 - Started with my B.E in Computer Engineering
             </h3>
             <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Joined Concordia University&apos;s Gina Cody School, exploring advanced 
-              AI, Cloud, and modern software practices.
+              Joined Pillai College of Engineering under University of Mumbai. University topper in Applied Physics-1, 2 Best Project Awards, and 3rd Place in Technical Paper Presentation
             </p>
           </div>
 

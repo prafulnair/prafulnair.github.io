@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       </p>
 
                   <Link to="/#projects" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
-              View My Work
+              View My Featured Projects
             </Link>
     </motion.section>
   );

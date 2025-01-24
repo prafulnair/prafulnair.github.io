@@ -66,9 +66,12 @@ const About: React.FC = () => {
               are the principles I live by.
             </p> 
 
-            <Link to="/about-me" className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
-  Learn More
-</Link>
+            <Link
+          to="/about-me"
+          className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all"
+        >
+          Get to know me better...
+        </Link>
           </div>
         </div>
       </div>
