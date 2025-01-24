@@ -100,18 +100,7 @@ const Projects: React.FC = () => {
       <div className="mt-10 text-center">
         <Link
           to="/all-projects"
-          className="
-            inline-block
-            bg-indigo-500
-            dark:bg-indigo-600
-            text-white
-            font-semibold
-            px-6
-            py-3
-            rounded-md
-            hover:opacity-90
-            transition-opacity
-          "
+          className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all"
         >
           View More of My Projects
         </Link>
