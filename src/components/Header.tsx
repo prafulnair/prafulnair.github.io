@@ -86,6 +86,7 @@ const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, darkMode }) => {
             <Link to="/education" className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
               Education
             </Link>
+
           </nav>
   
           <button

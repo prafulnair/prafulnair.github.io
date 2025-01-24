@@ -6,6 +6,10 @@ import Education from './components/Education';
 import Home from './components/Home';
 import { AnimatePresence, motion } from 'framer-motion';
 import AboutMe from './components/AboutMe';
+import AllProjectsPage from './components/AllProjectsPage';
+import AllProjectsItem from './components/AllProjectsItem';
+import ProjectDetailPage from './components/ProjectDetailPage';
+
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -44,6 +48,11 @@ function App() {
               </motion.main>
             }
           />
+          {/* Your new All Projects route */}
+  <Route path="/all-projects" element={<AllProjectsPage />} />
+
+{/* Potential project detail route (to be built later) */}
+<Route path="/projects/:id" element={<ProjectDetailPage />} />
           <Route
             path="/education"
             element={
