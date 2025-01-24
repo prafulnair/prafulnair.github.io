@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, darkMode }) => {
               Contact
             </Link>
             <Link to="/education" className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
-              Education
+              Education & Experiences
             </Link>
 
           </nav>

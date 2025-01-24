@@ -133,120 +133,70 @@ const AboutMe: React.FC = () => {
           </div>
         </div>
       </section>
+{/* Optional: Brief Timeline */}
+<section className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
+  <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">
+    Key Highlights
+  </h2>
+  <div className="relative border-l border-gray-300 dark:border-gray-700">
 
-      {/* Optional: Timeline or Gallery Section */}
-      <section className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">
-          Key Milestones
-        </h2>
-        {/* A vertical timeline example */}
-        <div className="relative border-l border-gray-300 dark:border-gray-700">
+    {/* 2016–2021: BE in Computer Engineering */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                       rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        2016–2021 — Started my Bachelor&apos;s in Computer Engineering
+      </h3>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+        Joined Pillai College of Engineering, Mumbai University, specialized in research and production Honepots and advanced system security.
+        Topped University in Applied Physics, 2 Best Project Awards, 2 Minor Internships in Cyber Security, 3rd Place in Technical Paper Presentation Competition.
 
-        <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2024 September - Joined Valsoft as Intern Developer
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-            Joined Valsoft as an Intern Developer and worked with their Financial Systems team to work on enhancing the ERP System - NetSuite and helped them build FeatureHub, a Feature Request Platform for the internal
-            employees to submit new feature requests, suggestions, report and track bugs and issues and discuss ideas with teammates. 
-            </p>
-          </div>
 
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2024 June - Graduated with Masters in Applied Computer Science from Concordia University
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Graduated with 3.65 GPA and a wealth of knowledge in building technical solutions
-            </p>
-          </div>
+      </p>
+    </div>
 
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2023 September - Started Working as a Graduate Teaching Assistant at Concordia University
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Managed over 14 teams, 80+ undergrad students, teaching them in Labs and Tutorials, helping them build Web Applications and collaborating through Agile Principles.
-            </p>
-          </div>
+    {/* 2021: UN Volunteering */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                       rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        2021 — UN Online Volunteering
+      </h3>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+        Supported two organizations, including <em>World Changing Center</em> (UK), 
+        helping children with autism and their families. Continued self‑study 
+        and graduate prep.
+      </p>
+    </div>
 
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2022 September - Started my Masters in Applied Computer Science at Concordia University ! 
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              New city, new country, new University, new people. It was Exciting.
-            </p>
-          </div>
+    {/* 2022–2024: Masters at Concordia */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                       rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        2022–2024 — Master&apos;s in Applied Computer Science
+      </h3>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+        Concordia University, Montreal. Served as a Teaching Assistant (2023), 
+        managing over 14 teams on web app development. Graduated with a 3.65 GPA.
+      </p>
+    </div>
 
-        
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2021 May - Started working as Volunteer at United Nations Online Volunteering Program
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              I worked with two organization registered with the UN. I was a researcher, editor and proof reader for "World Changing Center" who helped
-              kids with Autism and their family. I also worked with Malalo Sports Foundation, based in Zambia, helping with their fund-raiser activities.
-            </p>
-          </div>
+    {/* 2024: Intern Developer at Valsoft */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                       rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        2024 (Sep–Dec) — Intern Developer, Valsoft
+      </h3>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+        Enhanced NetSuite-based ERP and developed FeatureHub, a platform for 
+        feature requests and issue tracking. Looking forward to full-time roles next.
+      </p>
+    </div>
 
-          {/* Timeline Item 1 */}
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or a small text, e.g. "1" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2021 - Completed Bachelor&apos;s in Computer Engineering
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Graduated with distinction, 8.42 GPA / 10, focusing on Software Engineering &amp; Advanced System Security.
-            </p>
-          </div>
-
-          {/* Timeline Item 2 */}
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or "2" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2019 - Cybersecurity Internship
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Minor Internship, learning Penetration Testing.
-            </p>
-          </div>
-
-          {/* Timeline Item 3 */}
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600 rounded-full -left-3 ring-4 ring-white dark:ring-gray-900">
-              {/* Could be an icon or "3" */}
-            </span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2016 - Started with my B.E in Computer Engineering
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Joined Pillai College of Engineering under University of Mumbai. University topper in Applied Physics-1, 2 Best Project Awards, and 3rd Place in Technical Paper Presentation
-            </p>
-          </div>
-
-          {/* Additional timeline items as needed */}
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* Bottom CTA */}
       <section className="bg-gray-200 dark:bg-gray-800 py-10">
@@ -255,7 +205,7 @@ const AboutMe: React.FC = () => {
             Ready to Connect?
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mt-3 max-w-2xl mx-auto">
-            Interested in collaborating on a project, or just want to say hello?
+            Interested in learning how I can be a good fit for your team, or just want to say hello?
             Feel free to reach out—I&apos;d love to hear from you!
           </p>
           <a
