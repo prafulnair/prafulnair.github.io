@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -17,12 +18,10 @@ const Hero: React.FC = () => {
       <p className="text-xl max-w-2xl mb-6 text-gray-600 dark:text-gray-300">
         New Graduate from Concordia University | Software Developer, Enthusiastic about Cloud Development and Building Reliable and Scalable Systems.
       </p>
-      <a
-        href="#projects"
-        className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all"
-      >
-        View My Work
-      </a>
+
+                  <Link to="/#projects" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
+              View My Work
+            </Link>
     </motion.section>
   );
 };
