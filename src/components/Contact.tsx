@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
     target="_blank"
     rel="noopener noreferrer"
     className="text-indigo-500 dark:text-indigo-400 hover:opacity-80 transition-opacity"
-  > My LinkedIn
+  > LinkedIn
     <FaLinkedin size={30} aria-label="LinkedIn" />
   </a>
 
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
     target="_blank"
     rel="noopener noreferrer"
     className="text-indigo-500 dark:text-indigo-400 hover:opacity-80 transition-opacity"
-  > My GitHub
+  > GitHub
     <FaGithub size={30} aria-label="GitHub" />
   </a>
 </div>

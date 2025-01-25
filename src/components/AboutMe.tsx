@@ -80,11 +80,10 @@ const AboutMe: React.FC = () => {
                 Computer Engineering at University of Mumbai
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I started learning Programming right from High-school, starting with C, C++ and Visual Basics.
-                I got started Bachelor's of Engineering in Computer Engineering at University of Mumbai (Pillai College of Engineering) in 2016.
-                In 2019-2020, I collaborated with Professor K.S Charumathi and did research on lesser known cyber defence mechanism - Honeypots and built our own small scale Honeypot and tested on small data in a Lab environment. 
-                <p>Covid Pandemic halted the world, stopping my college when I was in my last term. I graduated admist the second wave in India, in January 2021.</p>
-              </p>
+              I began programming in high school, exploring C, C++, and Visual Basic. In 2016, I started my Bachelor’s in Computer Engineering at the University of Mumbai (Pillai College of Engineering). During 2019–2020, my team researched honeypots—building a small-scale version in a lab environment—and learned how attackers probe vulnerabilities. 
+              <p>Covid Pandemic halted the world, stopping my college when I was in my last term. I graduated admist the second wave in India, in January 2021.
+              </p></p>
+                             
             </div>
 
             <hr className="border-gray-300 dark:border-gray-700" />
@@ -92,7 +91,7 @@ const AboutMe: React.FC = () => {
 {/* Academic Milestones */}
 <div>
   <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-3">
-    Moving to Montreal, Concordia University.
+    Moving to Montreal, Masters at Concordia University.
   </h3>
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
     I moved to Montreal in 2022 and started with my Masters in Applied Computer Science at Concordia University. The focus of my studies spanned from 
@@ -108,11 +107,15 @@ const AboutMe: React.FC = () => {
             {/* Professional Outlook */}
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-3">
-                Professional Outlook
+                Professional Outlook: What drives Me..
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              As a new Software Engineer, I’m driven by the opportunity to craft robust solutions that tackle real challenges. I value effective communication, agile principles, and a strong sense of ownership in my work. Whether I’m implementing a data pipeline or designing a user-friendly platform, I strive to blend technical rigor with human-centered thinking—ultimately creating tools that make a meaningful difference.
+              I’m motivated by the chance to craft robust solutions that address real-world challenges, and I bring a 
+              human-centered mindset to every project I touch. Through agile principles, effective communication, and a strong sense of ownership, I aim to deliver technology that truly benefits its users.
+              <p>I believe in continuous learning, mentorship, and using technology for positive social impact. 
+    My guiding principle is simple yet powerful: “Be kind and help others whenever you can.” For me, innovation should simplify human life, empower communities, and leave a meaningful mark—both locally and globally.</p>      
               </p>
+        
             </div>
 
             <hr className="border-gray-300 dark:border-gray-700" />
@@ -120,15 +123,14 @@ const AboutMe: React.FC = () => {
             {/* Core Values or Driving Principles */}
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-3">
-                What Drives Me
+                What makes me Human?
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                "Be Kind and Help others whenever you can".
-                Beyond code, I believe in continuous learning, mentorship, and using 
-                technology for positive change. I am a strong proponent of the belief that technology should simplify human life and aid human society. I’m driven by the vision of making a 
-                meaningful impact—both locally and globally—through thoughtful, sustainable 
-                solutions that lift up the human experience. 
-              </p>
+  I love making coffee as much as I love discovering cafés in new cities. Travel 
+  fuels my curiosity—I explore diverse cultures and try to learn from each place 
+  I visit. I’m humbled by how much there is to discover beyond my current knowledge, 
+  but that humility drives me to wake up each day eager to learn more.
+</p>
             </div>
           </div>
         </div>
