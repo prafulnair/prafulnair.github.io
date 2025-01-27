@@ -182,7 +182,7 @@ export interface ProjectData {
         'Insightful visualizations (matplotlib/seaborn)',
         'Statistical summary of on-time performance',
       ],
-      repoLink: "https://github.com/prafulnair/Data-Analysis-Project-U.S.-Flight-Data-2021"
+      repoLink: "https://github.com/prafulnair/Data-Analysis-Project-U.S.-Flight-Data-2021-"
     },
     {
       id: 6,
