@@ -93,9 +93,9 @@ export interface ProjectData {
     techStack?: string[];  // optional
     features?: string[];   // optional
     // Additional optional fields if you need them:
-    // architectureImg?: string;
-    // challenges?: string[];
-    // lessons?: string;
+    architectureImg?: string;
+    challenges?: string[];
+    lessons?: string;
     repoLink?: string;
   }
   
@@ -135,7 +135,7 @@ export interface ProjectData {
     },
     {
       id: 3,
-      title: 'Minimal Portfolio',
+      title: 'Minimal Portfolio Built using React, Vite and TypeScript',
       shortDesc: 'A modern, clean personal portfolio.',
       longDesc:
         'A personal portfolio website designed with a minimalistic approach to showcase projects and skills.',
@@ -147,6 +147,7 @@ export interface ProjectData {
         'Dark mode toggle',
         'Dynamic project gallery',
       ],
+      repoLink: "https://github.com/prafulnair/prafulnair.github.io"
     },
     {
       id: 4,
@@ -165,6 +166,7 @@ export interface ProjectData {
         'Automated Extraction, Cleaning and Processing of Data via modular cloud functions written in Python',
         'Word Cloud generation by Cloud Functions in the very end of the Pipeline to get User\'s general sentiments about the book'
       ],
+      repoLink: "https://github.com/prafulnair/GCP-Data-Streaming-ETL-Pipeline"
     },
     {
       id: 5,
@@ -180,6 +182,7 @@ export interface ProjectData {
         'Insightful visualizations (matplotlib/seaborn)',
         'Statistical summary of on-time performance',
       ],
+      repoLink: "https://github.com/prafulnair/Data-Analysis-Project-U.S.-Flight-Data-2021"
     },
     {
       id: 6,
@@ -195,6 +198,7 @@ export interface ProjectData {
         'Random graph generation for stress testing',
         'Performance analytics & visualization',
       ],
+      repoLink: "https://github.com/prafulnair/ford-fulkerson-network-flow"
     },
     {
       id: 7,
@@ -210,11 +214,12 @@ export interface ProjectData {
         'Hough Transform for line detection',
         'Non-maximum suppression for accuracy',
       ],
+      repoLink: "https://github.com/prafulnair/Hough_Transformation"
     },
     {
       id: 8,
       title: 'BookFlix',
-      shortDesc: 'Netflix-inspired platform for book enthusiasts.',
+      shortDesc: 'Ongoing Project: Netflix-inspired platform for book enthusiasts.',
       longDesc:
         'An Ongoing Project. Desiging a platform connecting libraries with users, providing smart book recommendations, loan management, and notifications for due dates.',
       imageUrl: '/assets/bookflix.png',
@@ -228,7 +233,7 @@ export interface ProjectData {
     },
     {
       id: 9,
-      title: 'Career Service Platform',
+      title: 'Career Service Application',
       shortDesc: 'Web application for career services and job tracking.',
       longDesc:
         'Developed a career service platform web application using Agile methodology, enabling job seekers to manage applications and career resources effectively.',
@@ -240,6 +245,7 @@ export interface ProjectData {
         'Resource library & resume tips',
         'Simple analytics on application progress',
       ],
+      repoLink: "https://github.com/hemareddy123/ProjectK-Soen6011summer2023"
     },
     {
       id: 10,
