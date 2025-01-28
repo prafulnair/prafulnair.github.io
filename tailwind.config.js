@@ -21,11 +21,16 @@ export default {
           '0%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(-4px)' }
         },
+        shimmer: {
+          '0%': { backgroundPosition: '-700px 0' },
+          '100%': { backgroundPosition: '700px 0' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
         marquee: 'marquee 30s linear infinite',
         liftUp: 'liftUp 0.3s ease-out forwards',
+        shimmer: 'shimmer 2s infinite linear',
 
       },
       boxShadow: {
