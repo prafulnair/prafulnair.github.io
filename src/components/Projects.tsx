@@ -11,19 +11,19 @@ const Projects: React.FC = () => {
       title: 'Scalable GCP Data Pipeline for Amazon Book Reviews',
       description:
         'Developed a data streaming pipeline using Google Cloud Functions, Cloud Storage, and BigQuery to efficiently process and analyze Amazon Book Reviews data. Demonstrated auto-scaling and concurrency, along with real-time ETL transformations for large datasets.',
-      link: '#',
+      link: 'https://github.com/prafulnair/GCP-Data-Streaming-ETL-Pipeline',
     },
     {
       title: 'FeatureHub - A Feature Request Platform',
       description:
         'Built for the Financial Systems Team at Valsoft during my Internship, this full-stack, responsive Feature Request Website allows users to log in, submit feature requests and bug reports, and discuss ideas with fellow teammates. Think of it like a more professional, civil version of Reddit for product feedback.',
-      link: '#',
+      link: '#/all-projects',
     },
     {
       title: 'FlowForge: Ford-Fulkerson Network Flow Optimization',
       description:
         'A Python-based solution implementing the Ford-Fulkerson Algorithm with four augmenting path strategies (SAP, DFS-like, MaxCap, and Random). It features random graph generation and optional visualization, offering a comprehensive look at network flow optimization and performance analysis.',
-      link: '#',
+      link: 'https://github.com/prafulnair/ford-fulkerson-network-flow',
     },
   ];
 

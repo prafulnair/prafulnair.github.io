@@ -7,9 +7,9 @@ const Education: React.FC = () => {
 
     {/* Timeline / Key Milestones Section */}
     <section className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
-<h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">
+{/* <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">
     Key Milestones
-  </h2>
+  </h2> */}
 <div className="relative border-l border-gray-300 dark:border-gray-700">
 
   {/* 2016 - Started B.E. in Computer Engineering */}
