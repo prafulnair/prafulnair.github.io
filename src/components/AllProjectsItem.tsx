@@ -256,7 +256,7 @@ const AllProjectsItem: React.FC<AllProjectsItemProps> = ({ project }) => {
             </a>
           </div>
         )}
-        {isExpanded && !repoLink}(
+        {/* {isExpanded && !repoLink}(
             <div className='mt-auto pt-3'>
                 <Link
                 to={'projects/${id}'}
@@ -270,7 +270,7 @@ const AllProjectsItem: React.FC<AllProjectsItemProps> = ({ project }) => {
                     View Project Details
                 </Link>
             </div>
-        )
+        ) */}
       </div>
     </div>
   );
