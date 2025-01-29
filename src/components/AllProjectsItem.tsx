@@ -170,6 +170,7 @@
 
 import React, { useState } from 'react';
 import { ProjectData } from '../data/projectData';
+import { Link } from 'react-router-dom';
 
 interface AllProjectsItemProps {
   project: ProjectData;
@@ -255,6 +256,21 @@ const AllProjectsItem: React.FC<AllProjectsItemProps> = ({ project }) => {
             </a>
           </div>
         )}
+        {isExpanded && !repoLink}(
+            <div className='mt-auto pt-3'>
+                <Link
+                to={'projects/${id}'}
+                onClick={(e) => e.stopPropagation()}
+                className='
+                inline-block
+                bg-indigo-500 dark:bg-indigo-600
+                text-white px-4 py-2 rounded-md
+                font-semibold hover:opacity-90 transition-opacity'
+                >
+                    View Project Details
+                </Link>
+            </div>
+        )
       </div>
     </div>
   );
