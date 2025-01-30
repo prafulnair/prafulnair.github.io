@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  
   darkMode: 'class', // Enable manual toggle or set to 'media' for OS-level preference
   content: [
     "./index.html",
@@ -47,5 +48,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins:  [require("daisyui"),require('flowbite/plugin')],
+
 };
