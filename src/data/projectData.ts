@@ -102,17 +102,20 @@ export interface ProjectData {
   export const projects: ProjectData[] = [
     {
       id: 1,
-      title: 'Feature Request Platform',
-      shortDesc: 'A platform for gathering and managing feature requests.',
+      title: 'FeatureHub: A Feature Request Platform',
+      shortDesc: 'An internal platform built for Valsoft, for gathering and managing feature requests for enhancing their ERP system.',
       longDesc:
-        'Designed and developed a full-stack web application for internal feature request management at Valsoft using Flask and React, hosted on AWS App Runner. Implemented features like suggestion threads, upvotes, comments, and admin dashboard.',
+        'To enhance the efficiency of internal users and clients in requesting new features, reporting issues, and discussing ideas within the implemented ERP system, a dedicated platform was developed. Inspired by social media thread-based applications, this platform provides a centralized hub for communication, collaboration, and issue tracking—accessible exclusively to internal clients with secure authentication. This platform serves as a single source of truth for the Financial Systems team, enabling them to efficiently prioritize user needs, initiate projects, and improve ERP functionality based on real-time user input.',
       imageUrl: '/assets/feature-request.png',
   
       techStack: ['Flask', 'React', 'AWS App Runner', 'PostgreSQL'],
       features: [
-        'Threaded discussions with comments & upvotes',
-        'Admin dashboard to approve or reject features, update status of approved requests such as confirmed, implemented, or rejected',
-        'Deployed via AWS App Runner',
+        'Seamless Feature Requests & Issue Reporting – Users can submit new feature requests, report bugs, and engage in discussions.',
+        'Interactive Threads & User Engagement – Users can comment, like, and interact with posts, creating an open feedback loop.',
+        'Admin Dashboard & Analytics – Admins gain insights through a comprehensive dashboard that tracks:',
+        '	       •	Issues resolved in the last 10 days',
+        '          •    Graphs comparing the volume and types of requests',
+        '          •	Trends in user engagement and feedback patterns',
         'Responsive UI for desktop and mobile',
       ],
       
