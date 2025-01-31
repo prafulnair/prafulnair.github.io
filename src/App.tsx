@@ -50,7 +50,9 @@ function App() {
             }
           />
           {/* Your new All Projects route */}
-  <Route path="/all-projects" element={<AllProjectsPage />} />
+          
+  <Route 
+  path="/all-projects" element={<AllProjectsPage />} />
 
 {/* Potential project detail route (to be built later) */}
 <Route path="/projects/:id" element={<ProjectDetailPage />} />
