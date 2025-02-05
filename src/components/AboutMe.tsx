@@ -160,7 +160,7 @@ Later, I moved to Montreal to pursue a Master’s in Applied Computer Science at
                 Professional Outlook: What drives Me..
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I like building solutions that actually solve real-world problems. Whether it’s a small improvement or a bigger project, I try to keep the end user in mind and work backwards and make sure it’s useful. I work best in collaborative environments where communication and ownership matter, and I take pride in delivering work that makes a difference.
+              I like building solutions that actually solve real-world problems / real-people problems. Whether it’s a small improvement or a bigger project, I try to keep the end user in mind and work backwards and make sure it’s useful. I work best in collaborative environments where communication and ownership matter, and I take pride in delivering work that makes a difference.
                 <p>
                 I’m always looking to learn something new, share what I know, and use tech for good. My approach is simple: be kind, help where you can, and create things that make life easier for people. That’s what drives me—leaving a positive impact in a way that feels real and meaningful.
                 </p>
