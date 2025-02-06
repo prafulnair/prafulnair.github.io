@@ -94,7 +94,65 @@
 // export default Quote;
 
 
-// src/components/Quote.tsx// src/components/Quote.tsx
+// // src/components/Quote.tsx// src/components/Quote.tsx
+// import React from 'react';
+
+// const Quote: React.FC = () => {
+//   return (
+//     <a
+//       href="#"
+//       className="
+//         group
+//         relative
+//         flex
+//         items-center
+//         justify-center
+//         no-underline
+//         max-w-[400px]
+//         p-8
+//         cursor-pointer
+//         bg-white dark:bg-gray-900
+//         shadow-[inset_0_0_0_4px_#000,inset_-4px_-4px_0_6px_#CCC]
+//         dark:shadow-[inset_0_0_0_4px_#fff,inset_-4px_-4px_0_6px_#666]
+//         overflow-hidden
+//         transition-all
+//         before:content-['']
+//         before:absolute
+//         before:left-0
+//         before:bottom-0
+//         before:block
+//         before:w-full
+//         before:h-full
+//         before:bg-black dark:before:bg-white
+//         before:origin-[0_bottom_0]
+//         before:scale-y-0
+//         before:transition-transform
+//         before:duration-[400ms]
+//         before:ease-out
+//         group-hover:before:scale-y-100
+//       "
+//     >
+//       <h2
+//         className="
+//           relative z-10
+//           text-2xl
+//           font-bold
+//           font-[DM\ Sans,sans-serif]
+//           leading-[1.333]
+//           transition-colors
+//           duration-[400ms]
+//           group-hover:text-white dark:group-hover:text-black
+//         "
+//       >
+//         “What do we live for, if it is not to make life less difficult for each other?”
+//         <br />― George Eliot
+//       </h2>
+//     </a>
+//   );
+// };
+
+// export default Quote;
+
 import React from 'react';
 
 const Quote: React.FC = () => {
@@ -116,22 +174,18 @@ const Quote: React.FC = () => {
         dark:shadow-[inset_0_0_0_4px_#fff,inset_-4px_-4px_0_6px_#666]
         overflow-hidden
         transition-all
-        before:content-['']
-        before:absolute
-        before:left-0
-        before:bottom-0
-        before:block
-        before:w-full
-        before:h-full
-        before:bg-black dark:before:bg-white
-        before:origin-[0_bottom_0]
-        before:scale-y-0
-        before:transition-transform
-        before:duration-[400ms]
-        before:ease-out
-        group-hover:before:scale-y-100
       "
     >
+      {/* Background transition effect */}
+      <span
+        className="
+          absolute inset-0
+          bg-black dark:bg-white
+          scale-y-0 group-hover:scale-y-100
+          transition-transform duration-[400ms] ease-out
+        "
+      />
+
       <h2
         className="
           relative z-10
@@ -139,8 +193,8 @@ const Quote: React.FC = () => {
           font-bold
           font-[DM\ Sans,sans-serif]
           leading-[1.333]
-          transition-colors
-          duration-[400ms]
+          transition-colors duration-[400ms]
+          text-black dark:text-white
           group-hover:text-white dark:group-hover:text-black
         "
       >

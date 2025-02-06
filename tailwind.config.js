@@ -44,6 +44,7 @@ export default {
         'accent': '#a78bfa', // e.g. a soft purple
       },
       fontFamily: {
+        
         sans: ["Inter", "sans-serif"], // Or any other Google Font
         sans: ["DM Sans", "sans-serif"]
       },
