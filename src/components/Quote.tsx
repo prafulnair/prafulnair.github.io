@@ -5,7 +5,7 @@ import React from 'react';
 const Quote: React.FC = () => {
   return (
     <a
-      href="#"
+      href="https://en.wikipedia.org/wiki/George_Eliot"
       className="
         group
         relative
