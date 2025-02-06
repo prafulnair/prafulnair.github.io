@@ -45,9 +45,10 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Or any other Google Font
+        sans: ["DM Sans", "sans-serif"]
       },
     },
   },
-  plugins:  [require("daisyui"),require('flowbite/plugin')],
+  plugins:  [],
 
 };

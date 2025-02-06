@@ -276,6 +276,14 @@ const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, darkMode }) => {
             Education & Experiences
           </Link>
 
+                    {/* New Quote Link
+                    <Link
+            to="/quote"
+            className="hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors text-gray-800 dark:text-gray-100"
+          >
+            Quote
+          </Link> */}
+
           {/* Dark Mode Toggle */}
           <button
             onClick={onToggleDarkMode}

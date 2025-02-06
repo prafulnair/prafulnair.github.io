@@ -1,3 +1,60 @@
+// import { NavLink } from "react-router-dom";
+
+// const Navbar: React.FC = () => {
+//   const linkClass =
+//     "px-4 py-2 hover:bg-vscode-hover transition-colors duration-200";
+//   const activeClass =
+//     "bg-vscode-selected border-b-2 border-vscode-accent";
+
+//   return (
+//     <div className="flex items-center bg-vscode-tab text-white">
+//       {/* About Tab */}
+//       <NavLink
+//         to="/about"
+//         end
+//         className={({ isActive }) =>
+//           isActive ? `${linkClass} ${activeClass}` : linkClass
+//         }
+//       >
+//         About.js
+//       </NavLink>
+
+//       {/* Projects Tab */}
+//       <NavLink
+//         to="/projects"
+//         className={({ isActive }) =>
+//           isActive ? `${linkClass} ${activeClass}` : linkClass
+//         }
+//       >
+//         Projects.js
+//       </NavLink>
+
+//       {/* Contact Tab */}
+//       <NavLink
+//         to="/contact"
+//         className={({ isActive }) =>
+//           isActive ? `${linkClass} ${activeClass}` : linkClass
+//         }
+//       >
+//         Contact.js
+//       </NavLink>
+// {/* New Quote Tab */}
+// <NavLink
+//         to="/quote"
+//         className={({ isActive }) =>
+//           isActive ? `${linkClass} ${activeClass}` : linkClass
+//         }
+//       >
+//         Quote
+//       </NavLink>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+// src/components/Navbar.tsx
 import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
@@ -7,7 +64,7 @@ const Navbar: React.FC = () => {
     "bg-vscode-selected border-b-2 border-vscode-accent";
 
   return (
-    <div className="flex items-center bg-vscode-tab text-white">
+    <nav className="flex items-center bg-vscode-tab text-white">
       {/* About Tab */}
       <NavLink
         to="/about"
@@ -38,7 +95,17 @@ const Navbar: React.FC = () => {
       >
         Contact.js
       </NavLink>
-    </div>
+
+      {/* New Quote Tab */}
+      <NavLink
+        to="/quote"
+        className={({ isActive }) =>
+          isActive ? `${linkClass} ${activeClass}` : linkClass
+        }
+      >
+        Quote
+      </NavLink>
+    </nav>
   );
 };
 

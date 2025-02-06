@@ -3,6 +3,7 @@
 // import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import TerminalBanner from './TerminalBanner';
+import Quote from './Quote';
 
 const AboutMe: React.FC = () => {
   // Example static array of skills; adjust or expand as needed
@@ -87,6 +88,9 @@ const skillIcons: { [key: string]: string } = {
               <li>• Aspire to build scalable &amp; reliable systems</li>
               <li>• Loves Coffee</li>
             </ul>
+            <div>
+                <Quote/>
+            </div>
           </div>
 
           {/* Right Column: Detailed Narrative */}
