@@ -104,7 +104,7 @@
 
 
 import React, { useState } from 'react';
-import MarqueeBanner from './MarqueeBanner';
+// import MarqueeBanner from './MarqueeBanner';
 import { Link } from 'react-router-dom';
 
 interface HeaderProps {
