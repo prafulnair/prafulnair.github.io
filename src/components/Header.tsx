@@ -129,7 +129,7 @@ const Header: React.FC<HeaderProps> = ({ onToggleDarkMode, darkMode }) => {
 
   return (
     <>
-      <MarqueeBanner />
+      {/* <MarqueeBanner /> */}
 
       <header className="w-full py-4 flex items-center justify-between bg-white dark:bg-gray-900 transition-colors">
         {/* Brand / Home Link */}

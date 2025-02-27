@@ -14,4 +14,4 @@ const MarqueeBanner: React.FC = () => {
   );
 };
 
-export default MarqueeBanner;
+export default ç;
