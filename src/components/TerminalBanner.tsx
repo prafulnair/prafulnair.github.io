@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-const lines = ["$ whoami", "$ > praful-nair"];
-
+const lines = [
+  "$ whoami", 
+  "$ > Praful Nair - Software Engineer & Problem Solver", 
+  "$ > Based in Montreal, QC | Building scalable, efficient software"
+];
 const TerminalBanner: React.FC = () => {
   const [typedText, setTypedText] = useState<string>("");
   const [lineIndex, setLineIndex] = useState<number>(0);
