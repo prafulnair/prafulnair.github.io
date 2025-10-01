@@ -1,11 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Button } from "flowbite-react";
 
-export function Example() {
-  return <Button gradientDuoTone="purpleToBlue">Flowbite Button</Button>;
-}
+type CTAButtonProps = {
+  to: string;
+  variant?: 'primary' | 'secondary';
+  children: React.ReactNode;
+};
+
+const CTAButton: React.FC<CTAButtonProps> = ({ to, variant = 'primary', children }) => {
+  const baseStyles =
+    'inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500';
+  const variantStyles =
+    variant === 'primary'
+      ? 'bg-indigo-500 text-white hover:bg-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 shadow-lg shadow-indigo-500/20'
+      : 'border border-indigo-200 text-indigo-600 hover:bg-indigo-50 dark:text-indigo-300 dark:border-indigo-500/60 dark:hover:bg-indigo-500/10';
+
+  return (
+    <Link to={to} className={`${baseStyles} ${variantStyles}`}>
+      {children}
+    </Link>
+  );
+};
 
 const Hero: React.FC = () => {
   return (
@@ -13,79 +29,56 @@ const Hero: React.FC = () => {
       id="hero"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 3.4}}
-      className="min-h-screen flex flex-col items-center justify-center text-center py-10"
+      transition={{ duration: 3.4 }}
+      className="relative overflow-hidden min-h-screen flex flex-col items-center justify-center text-center py-16 px-6 bg-gradient-to-b from-white via-white to-indigo-50 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900"
     >
-      <h1 className="text-5xl font-extrabold mb-4">
-        Hello, I&apos;m{" "}
-        <span className="text-indigo-500 dark:text-indigo-400">Praful</span>
-      </h1>
-      <p className="text-xl max-w-2xl mb-6 text-gray-600 dark:text-gray-300">
-        New Graduate from Concordia University | Software Developer, Enthusiastic about Cloud Development and Building Reliable and Scalable Systems.
-      </p>
-      <div className="flex flex-wrap gap-4 justify-center">
-      {/* <Link to="/#projects" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
-              Featured Projects
-            </Link> */}
-            <Link to="/#about" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
-              About Me
-            </Link>
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute -top-32 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-indigo-200/40 blur-3xl dark:bg-indigo-500/20" />
+        <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-purple-200/30 blur-3xl dark:bg-purple-500/10" />
       </div>
-                  {/* <Link to="/#projects" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
-              View My Featured Projects
-            </Link>
-            <Link to="/#about" className="inline-block bg-indigo-500 dark:bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all">
-              About Me
-            </Link> */}
-
-
+      <div className="relative z-10 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500 dark:text-indigo-300 mb-4">
+          Cloud-native engineer
+        </p>
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 text-gray-900 dark:text-gray-100">
+          Hello, I&apos;m <span className="text-indigo-600 dark:text-indigo-400">Praful</span>
+        </h1>
+        <p className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          I build resilient, human-centered software that keeps data-driven teams moving forward.
+        </p>
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8">
+          From cloud infrastructure to polished product experiences, I help companies reduce operational friction,
+          automate critical workflows, and launch scalable features with confidence.
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <CTAButton to="/#projects">View My Projects</CTAButton>
+          <CTAButton to="/#contact" variant="secondary">
+            Let&apos;s Collaborate
+          </CTAButton>
+        </div>
+        <div className="mt-12 flex flex-col gap-6 text-left sm:flex-row sm:justify-center sm:text-center">
+          <div className="flex-1">
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">5+</p>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+              Cloud-native projects shipped across web, mobile, and infrastructure.
+            </p>
+          </div>
+          <div className="flex-1">
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">99.9%</p>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+              Reliability targets met by designing fault-tolerant, observable systems.
+            </p>
+          </div>
+          <div className="flex-1">
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">3x</p>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+              Delivery acceleration for teams through automation and streamlined tooling.
+            </p>
+          </div>
+        </div>
+      </div>
     </motion.section>
   );
 };
 
 export default Hero;
-
-// import React from 'react';
-// import { motion } from 'framer-motion';
-// import { Link } from 'react-router-dom';
-// import { Button } from "flowbite-react";
-
-// const Hero: React.FC = () => {
-//   return (
-//     <motion.section
-//       id="hero"
-//       initial={{ opacity: 0, y: 20 }}
-//       animate={{ opacity: 1, y: 0 }}
-//       transition={{ duration: 3.4 }}
-//       className="min-h-screen flex flex-col items-center justify-center text-center py-10 px-4"
-//     >
-//       <h1 className="text-5xl font-extrabold mb-4">
-//         Hello, I&apos;m{" "}
-//         <span className="text-indigo-500 dark:text-indigo-400">Praful</span>
-//       </h1>
-//       <p className="text-xl max-w-2xl mb-8 text-gray-600 dark:text-gray-300">
-//         New Graduate from Concordia University | Software Developer, Enthusiastic about Cloud Development and Building Reliable and Scalable Systems.
-//       </p>
-
-//       {/* Button Container */}
-//       <div className="flex flex-wrap gap-4 justify-center">
-//         <Link to="/#projects" className="w-full sm:w-auto">
-//           <Button gradientDuoTone="purpleToBlue" className="w-full sm:w-auto">
-//             View My Featured Projects
-//           </Button>
-//         </Link>
-//         <Link to="/#about" className="w-full sm:w-auto">
-//           <Button gradientDuoTone="purpleToBlue" className="w-full sm:w-auto">
-//             About Me
-//           </Button>
-//         </Link>
-//         {/* Optional Additional Button */}
-//         <Button gradientDuoTone="pinkToOrange" onClick={() => alert('Button Clicked!')} className="w-full sm:w-auto">
-//           Click Me
-//         </Button>
-//       </div>
-//     </motion.section>
-//   );
-// };
-
-// export default Hero;
