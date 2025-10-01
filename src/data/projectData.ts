@@ -31,7 +31,7 @@ export const projects: ProjectData[] = [
     longDesc:
       'To enhance the efficiency of internal users and clients in requesting new features, reporting issues, and discussing ideas within the implemented ERP system, a dedicated platform was developed. Inspired by social media thread-based applications, this platform provides a centralized hub for communication, collaboration, and issue tracking—accessible exclusively to internal clients with secure authentication. This platform serves as a single source of truth for the Financial Systems team, enabling them to efficiently prioritize user needs, initiate projects, and improve ERP functionality based on real-time user input.',
     imageUrl: '/assets/feature-request.png',
-    techStack: ['Flask', 'React', 'AWS App Runner', 'PostgreSQL'],
+    techStack: ['Python','Flask', 'React.js', 'SQLAlchemy','AWS App Runner', 'PostgreSQL'],
     features: [
       'Seamless feature requests, bug reports, and threaded discussions',
       'Interactive collaboration with comments, likes, and prioritisation tags',
@@ -41,7 +41,7 @@ export const projects: ProjectData[] = [
     repoLink: 'https://github.com/prafulnair/FeatureHub-Feature-Request-Platform',
     featured: true,
     impact:
-      'Centralised 150+ feature submissions and shortened prioritisation cycles from days to hours through live analytics.',
+      'Centralised feature submissions and shortened prioritisation cycles from days to hours through live analytics.',
     role: 'Full-stack Developer (Valsoft Internship)',
     actions: [
       { label: 'Read Case Study', href: '/projects/1', type: 'internal' },
@@ -78,7 +78,7 @@ export const projects: ProjectData[] = [
     title: 'Data Streaming ETL Pipeline',
     shortDesc: 'Real-time data streaming & processing pipeline.',
     longDesc:
-      'Engineered and implemented highly optimised cloud functions for real-time data streaming and processing from Google Cloud Storage to BigQuery, reducing data processing time by 40%.',
+      'Engineered and implemented highly optimised cloud functions for data streaming and processing from Google Cloud Storage to BigQuery, reducing data processing time by 40%.',
     imageUrl: '/assets/etl-pipeline.png',
     techStack: ['Python', 'Google Cloud Platform', 'BigQuery', 'Cloud Functions', 'Cloud Storage'],
     features: [
@@ -92,7 +92,7 @@ export const projects: ProjectData[] = [
     repoLink: 'https://github.com/prafulnair/GCP-Data-Streaming-ETL-Pipeline',
     featured: true,
     impact:
-      'Unlocked near real-time analytics on 1M+ daily records while cutting processing time by 40% through modular cloud automation.',
+    'Event-driven ingestion and processing of Amazon book reviews using GCP; batch + streaming patterns with queryable results in BigQuery and WordCloud Data Visualizations.',
     role: 'Cloud Data Engineer',
     actions: [
       { label: 'Read Case Study', href: '/projects/4', type: 'internal' },
@@ -130,10 +130,11 @@ export const projects: ProjectData[] = [
     repoLink: 'https://github.com/prafulnair/ford-fulkerson-network-flow',
     featured: true,
     impact:
-      'Delivered decision support for capacity planning by benchmarking 1,000+ simulated networks using advanced flow strategies.',
+      'Delivered decision support for capacity planning by benchmarking 100+ simulated networks using advanced flow strategies.',
     role: 'Algorithm Engineer',
     actions: [
       { label: 'Read Case Study', href: '/projects/6', type: 'internal' },
+      { label: 'View Project Visualization', href: 'https://praful-ford-fulkerson-network-flow.streamlit.app/', type: 'external' },
       { label: 'View Repo', href: 'https://github.com/prafulnair/ford-fulkerson-network-flow', type: 'external' },
     ],
   },
