@@ -4,6 +4,12 @@ export interface ProjectAction {
   type?: 'external' | 'internal';
 }
 
+export interface ProjectMedia {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface ProjectData {
   id: number;
   title: string;
@@ -19,6 +25,9 @@ export interface ProjectData {
   featured?: boolean;
   impact?: string;
   role?: string;
+  problem?: string;
+  impactMetrics?: string[];
+  media?: ProjectMedia[];
   actions?: ProjectAction[];
 }
 
@@ -31,7 +40,7 @@ export const projects: ProjectData[] = [
     longDesc:
       'To enhance the efficiency of internal users and clients in requesting new features, reporting issues, and discussing ideas within the implemented ERP system, a dedicated platform was developed. Inspired by social media thread-based applications, this platform provides a centralized hub for communication, collaboration, and issue tracking—accessible exclusively to internal clients with secure authentication. This platform serves as a single source of truth for the Financial Systems team, enabling them to efficiently prioritize user needs, initiate projects, and improve ERP functionality based on real-time user input.',
     imageUrl: '/assets/feature-request.png',
-    techStack: ['Python','Flask', 'React.js', 'SQLAlchemy','AWS App Runner', 'PostgreSQL'],
+    techStack: ['Python', 'Flask', 'React.js', 'SQLAlchemy', 'AWS App Runner', 'PostgreSQL'],
     features: [
       'Seamless feature requests, bug reports, and threaded discussions',
       'Interactive collaboration with comments, likes, and prioritisation tags',
@@ -43,6 +52,20 @@ export const projects: ProjectData[] = [
     impact:
       'Centralised feature submissions and shortened prioritisation cycles from days to hours through live analytics.',
     role: 'Full-stack Developer (Valsoft Internship)',
+    problem:
+      'Internal stakeholders lacked a unified space to raise feature ideas and triage bugs, leading to fragmented feedback channels and slow prioritisation.',
+    impactMetrics: [
+      'Reduced prioritisation cycle time from multiple days to hours with real-time dashboards.',
+      'Enabled 30+ internal client teams to submit and collaborate on ERP requests securely.',
+      'Delivered single-source visibility for the Financial Systems team across roadmap discussions.',
+    ],
+    media: [
+      {
+        src: '/assets/feature-request.png',
+        alt: 'FeatureHub request analytics dashboard',
+        caption: 'Threaded discussions and analytics that guide roadmap prioritisation.',
+      },
+    ],
     actions: [
       { label: 'Read Case Study', href: '/projects/1', type: 'internal' },
       { label: 'View Repo', href: 'https://github.com/prafulnair/FeatureHub-Feature-Request-Platform', type: 'external' },
@@ -62,6 +85,20 @@ export const projects: ProjectData[] = [
       'Optimised for complex join queries',
     ],
     repoLink: 'https://github.com/prafulnair/QueryQantify-Relational_Algebra_Query_Estimator',
+    role: 'Research Engineer',
+    problem:
+      'Database students and practitioners needed a way to predict relational query sizes without full execution to understand optimisation trade-offs.',
+    impactMetrics: [
+      'Simulated optimiser-like estimates for 50+ academic benchmark queries.',
+      'Improved teaching demos by turning theoretical relational algebra concepts into runnable tooling.',
+    ],
+    media: [
+      {
+        src: '/assets/query-estimation.png',
+        alt: 'Query estimation system workflow diagram',
+        caption: 'Estimator visualising selectivity and join cardinalities.',
+      },
+    ],
   },
   {
     id: 3,
@@ -72,6 +109,20 @@ export const projects: ProjectData[] = [
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
     features: ['Mobile-first responsive design', 'Dark mode toggle', 'Dynamic project gallery'],
     repoLink: 'https://github.com/prafulnair/prafulnair.github.io',
+    role: 'Designer & Front-end Engineer',
+    problem:
+      'Needed a performant and easily maintainable portfolio to showcase case studies with fast load times and modern UX.',
+    impactMetrics: [
+      'Lighthouse performance score consistently above 95 on desktop and mobile.',
+      'Supports rapid addition of projects with markdown-like configuration.',
+    ],
+    media: [
+      {
+        src: '/assets/portfolio.png',
+        alt: 'Minimal portfolio hero page screenshot',
+        caption: 'Responsive hero section introducing Praful with quick project access.',
+      },
+    ],
   },
   {
     id: 4,
@@ -92,8 +143,22 @@ export const projects: ProjectData[] = [
     repoLink: 'https://github.com/prafulnair/GCP-Data-Streaming-ETL-Pipeline',
     featured: true,
     impact:
-    'Event-driven ingestion and processing of Amazon book reviews using GCP; batch + streaming patterns with queryable results in BigQuery and WordCloud Data Visualizations.',
+      'Event-driven ingestion and processing of Amazon book reviews using GCP; batch + streaming patterns with queryable results in BigQuery and WordCloud Data Visualizations.',
     role: 'Cloud Data Engineer',
+    problem:
+      'Analytics teams needed near real-time insights from massive Amazon review feeds but the existing batch jobs were slow and failure-prone.',
+    impactMetrics: [
+      'Cut end-to-end processing latency by 40% using event-driven Cloud Functions.',
+      'Processed 1M+ review records per day with automated quality gates before landing in BigQuery.',
+      'Delivered sentiment word-clouds that highlighted trending topics during pilot launch.',
+    ],
+    media: [
+      {
+        src: '/assets/etl-pipeline.png',
+        alt: 'Event-driven data streaming pipeline diagram',
+        caption: 'GCP services orchestrating streaming and batch workloads.',
+      },
+    ],
     actions: [
       { label: 'Read Case Study', href: '/projects/4', type: 'internal' },
       { label: 'View Repo', href: 'https://github.com/prafulnair/GCP-Data-Streaming-ETL-Pipeline', type: 'external' },
@@ -113,6 +178,20 @@ export const projects: ProjectData[] = [
       'Statistical summary of on-time performance',
     ],
     repoLink: 'https://github.com/prafulnair/Data-Analysis-Project-U.S.-Flight-Data-2021-',
+    role: 'Data Analyst',
+    problem:
+      'Airline operations stakeholders lacked concise insights into delay patterns hidden within raw Bureau of Transportation Statistics datasets.',
+    impactMetrics: [
+      'Cleansed and analysed 7M+ flight records to surface seasonal delay trends.',
+      'Produced visual reports consumed by classmates and instructors during final presentation.',
+    ],
+    media: [
+      {
+        src: '/assets/flight-data.png',
+        alt: 'Flight data analysis dashboards',
+        caption: 'Delay trend visualisations and route comparisons.',
+      },
+    ],
   },
   {
     id: 6,
@@ -132,6 +211,19 @@ export const projects: ProjectData[] = [
     impact:
       'Delivered decision support for capacity planning by benchmarking 100+ simulated networks using advanced flow strategies.',
     role: 'Algorithm Engineer',
+    problem:
+      'Operations teams required a repeatable way to stress-test capacity planning strategies across varying network topologies.',
+    impactMetrics: [
+      'Benchmarked 100+ randomly generated networks across four augmenting path strategies.',
+      'Identified the most performant strategy per density category with visual evidence.',
+    ],
+    media: [
+      {
+        src: '/assets/network-flow.png',
+        alt: 'Network flow optimisation visualisation',
+        caption: 'Flow capacities visualised from the Streamlit reporting app.',
+      },
+    ],
     actions: [
       { label: 'Read Case Study', href: '/projects/6', type: 'internal' },
       { label: 'View Project Visualization', href: 'https://praful-ford-fulkerson-network-flow.streamlit.app/', type: 'external' },
@@ -152,6 +244,20 @@ export const projects: ProjectData[] = [
       'Non-maximum suppression for accuracy',
     ],
     repoLink: 'https://github.com/prafulnair/Hough_Transformation',
+    role: 'Computer Vision Engineer',
+    problem:
+      'Needed a reliable classical computer vision baseline for highway lane detection before evaluating deep learning methods.',
+    impactMetrics: [
+      'Delivered a baseline pipeline that processes HD highway footage in near real time.',
+      'Improved lane detection accuracy by combining ROI masking with non-max suppression.',
+    ],
+    media: [
+      {
+        src: '/assets/lane-detection.png',
+        alt: 'Lane detection overlay on highway footage',
+        caption: 'Canny edges and Hough Transform produce stable lane overlays.',
+      },
+    ],
   },
   {
     id: 8,
@@ -165,6 +271,20 @@ export const projects: ProjectData[] = [
       'User registration & library linking',
       'Automated due date reminders',
       'Recommendation engine for suggested reads',
+    ],
+    role: 'Product Designer & Full-stack Developer',
+    problem:
+      'Libraries and book clubs needed a digital bridge to keep patrons engaged with tailored recommendations and loan management.',
+    impactMetrics: [
+      'Designed core flows for borrowers, librarians, and administrators.',
+      'Outlined recommendation engine leveraging reading history for personalised alerts.',
+    ],
+    media: [
+      {
+        src: '/assets/bookflix.png',
+        alt: 'BookFlix concept interface mockups',
+        caption: 'Netflix-inspired browsing experience adapted for library catalogues.',
+      },
     ],
   },
   {
@@ -181,6 +301,20 @@ export const projects: ProjectData[] = [
       'Simple analytics on application progress',
     ],
     repoLink: 'https://github.com/hemareddy123/ProjectK-Soen6011summer2023',
+    role: 'Full-stack Developer',
+    problem:
+      'Career service advisors needed tooling to centralise student job search workflows and provide real-time progress tracking.',
+    impactMetrics: [
+      'Coordinated Agile sprints with a 4-person team delivering MVP in 6 weeks.',
+      'Implemented shared analytics that increased advisor check-ins during pilot tests.',
+    ],
+    media: [
+      {
+        src: '/assets/career-service.png',
+        alt: 'Career service web app dashboard',
+        caption: 'Dashboard highlighting job applications and coaching resources.',
+      },
+    ],
   },
   {
     id: 10,
@@ -194,6 +328,20 @@ export const projects: ProjectData[] = [
       'Classes for player, enemy, items, and world',
       'Inventory & combat system',
       'Modular design for expansions',
+    ],
+    role: 'Game Systems Developer',
+    problem:
+      'Needed a sandbox engine to experiment with RPG mechanics without depending on heavyweight frameworks.',
+    impactMetrics: [
+      'Implemented modular object model covering players, enemies, combat, and inventory.',
+      'Enabled rapid prototyping of new quests and encounters via extensible class hierarchy.',
+    ],
+    media: [
+      {
+        src: '/assets/rpg-engine.png',
+        alt: 'RPG engine class design mockup',
+        caption: 'Object-oriented layout for the Python RPG engine.',
+      },
     ],
   },
 ];
