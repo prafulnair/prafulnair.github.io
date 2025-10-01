@@ -41,7 +41,9 @@ export default {
       // Custom colors, if needed
       colors: {
         // This is optional, just an example of adding a custom color
-        'accent': '#a78bfa', // e.g. a soft purple
+        accent: '#a78bfa', // e.g. a soft purple
+        surface: 'rgb(var(--color-surface) / <alpha-value>)',
+        default: 'rgb(var(--color-text-default) / <alpha-value>)',
       },
       fontFamily: {
         
