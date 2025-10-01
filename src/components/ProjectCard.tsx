@@ -1,223 +1,101 @@
-// import React from 'react';
-
-// interface ProjectCardProps {
-//   title: string;
-//   description: string;
-//   link: string;
-// }
-
-// const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
-//   return (
-//     <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition-shadow flex flex-col justify-between">
-//       <div>
-//         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-//         <p className="text-gray-600 dark:text-gray-300">{description}</p>
-//       </div>
-//       <div className="mt-4">
-//         <a
-//           href={link}
-//           className="text-indigo-500 dark:text-indigo-400 font-semibold hover:underline"
-//         >
-//           View Project
-//         </a>
-//       </div>
-//     </div>
-//   );
-// };
-
-// // export default ProjectCard;
-// import React, { useState } from 'react';
-
-// interface ProjectCardProps {
-//   title: string;
-//   description: string;
-//   link: string;
-// }
-
-// const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
-//   const [showModal, setShowModal] = useState(false);
-
-//   return (
-//     <>
-//       <div
-//         onClick={() => setShowModal(true)}
-//         className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition-shadow cursor-pointer"
-//       >
-//         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-//         <p className="text-gray-600 dark:text-gray-300">{description}</p>
-//       </div>
-
-//       {showModal && (
-//         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-//           <div className="bg-white dark:bg-gray-800 p-8 rounded">
-//             <h3 className="text-2xl font-bold mb-4">{title}</h3>
-//             <p className="mb-4">{description}</p>
-//             <a
-//               href={link}
-//               className="inline-block bg-indigo-500 text-white px-4 py-2 rounded"
-//               target="_blank"
-//               rel="noreferrer"
-//             >
-//               View Project
-//             </a>
-//             <button
-//               onClick={() => setShowModal(false)}
-//               className="ml-4 bg-red-500 text-white px-4 py-2 rounded"
-//             >
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </>
-//   );
-// };
-
-// export default ProjectCard;
-
-import React, { useState, Fragment } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import type { ProjectAction } from '../data/projectData';
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  link: string;
+  techStack?: string[];
+  impact?: string;
+  role?: string;
+  actions?: ProjectAction[];
+  link?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const buttonClasses =
+  'inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500';
 
-  function openDialog() {
-    setIsOpen(true);
-  }
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  techStack,
+  impact,
+  role,
+  actions = [],
+  link,
+}) => {
+  const fallbackActions: ProjectAction[] = link
+    ? [
+        {
+          label: 'View Project',
+          href: link,
+          type: link.startsWith('/') || link.startsWith('#') ? 'internal' : 'external',
+        },
+      ]
+    : [];
 
-  function closeDialog() {
-    setIsOpen(false);
-  }
+  const resolvedActions = actions.length > 0 ? actions : fallbackActions;
 
   return (
-    <>
-      {/* Card Content */}
-      <div
-        onClick={openDialog}
-        className="
-          p-6 bg-white dark:bg-gray-800 
-          rounded-lg shadow hover:shadow-xl 
-          transition-shadow cursor-pointer
-        "
-      >
-        <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-          {title}
-        </h3>
-        <p className="text-gray-600 dark:text-gray-300">
-          {description}
-        </p>
+    <article className="flex h-full flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
+      <div>
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+        {role && (
+          <p className="mt-1 text-sm font-medium uppercase tracking-wide text-indigo-600 dark:text-indigo-300">
+            {role}
+          </p>
+        )}
+        <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{description}</p>
+
+        {techStack && techStack.length > 0 && (
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {techStack.map((tech) => (
+              <li
+                key={tech}
+                className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-200"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {impact && (
+          <div className="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/60 p-4 dark:border-indigo-500/40 dark:bg-indigo-500/10">
+            <p className="text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-300">
+              Impact
+            </p>
+            <p className="mt-1 text-sm text-indigo-900 dark:text-indigo-100">{impact}</p>
+          </div>
+        )}
       </div>
 
-      {/* Headless UI Dialog */}
-      <Transition show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-50" onClose={closeDialog}>
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            {/* The backdrop */}
-            <div 
-              className="
-                fixed inset-0 bg-black 
-                bg-opacity-40 
-              " 
-              aria-hidden="true" 
-            />
-          </Transition.Child>
+      {resolvedActions.length > 0 && (
+        <div className="mt-6 flex flex-wrap gap-3">
+          {resolvedActions.map((action) => {
+            if (action.type === 'internal') {
+              return (
+                <Link key={`${action.label}-${action.href}`} to={action.href} className={`${buttonClasses} bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400`}>
+                  {action.label}
+                </Link>
+              );
+            }
 
-          <div className="fixed inset-0 flex items-center justify-center p-4">
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
-            >
-              <Dialog.Panel
-                className="
-                  w-full max-w-lg 
-                  rounded-lg 
-                  bg-white dark:bg-gray-800
-                  p-6 
-                  shadow-lg 
-                  transform transition-all
-                "
+            return (
+              <a
+                key={`${action.label}-${action.href}`}
+                href={action.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${buttonClasses} border border-indigo-200 text-indigo-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-500/40 dark:text-indigo-200 dark:hover:border-indigo-400`}
               >
-                {/* Close Button (top-right) */}
-                <div className="flex justify-end">
-                  <button
-                    onClick={closeDialog}
-                    className="
-                      text-gray-500 dark:text-gray-300 
-                      hover:text-red-500 
-                      transition-colors
-                      focus:outline-none
-                    "
-                  >
-                    ✕
-                  </button>
-                </div>
-
-                {/* Title */}
-                <Dialog.Title 
-                  as="h3" 
-                  className="text-2xl font-bold text-gray-800 dark:text-gray-100"
-                >
-                  {title}
-                </Dialog.Title>
-
-                {/* Body */}
-                <div className="mt-4 text-gray-700 dark:text-gray-300">
-                  {description}
-                </div>
-
-                {/* Actions */}
-                <div className="mt-6 flex space-x-3">
-                  <a
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      bg-indigo-500 dark:bg-indigo-600 
-                      text-white px-4 py-2 rounded-full 
-                      font-semibold hover:opacity-90 
-                      transition-opacity
-                    "
-                  >
-                    View Project
-                  </a>
-                  <button
-                    onClick={closeDialog}
-                    className="
-                      bg-gray-200 dark:bg-gray-700 
-                      text-gray-800 dark:text-gray-200 
-                      px-4 py-2 rounded-full 
-                      font-semibold hover:opacity-90 
-                      transition-opacity
-                    "
-                  >
-                    Close
-                  </button>
-                </div>
-              </Dialog.Panel>
-            </Transition.Child>
-          </div>
-        </Dialog>
-      </Transition>
-    </>
+                {action.label}
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </article>
   );
 };
 
