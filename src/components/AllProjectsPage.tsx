@@ -33,14 +33,35 @@
 // export default AllProjectsPage;
 
 // src/pages/AllProjectsPage.tsx
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import AllProjectsItem from '../components/AllProjectsItem';
 import { projects } from '../data/projectData';
 import { motion } from 'framer-motion';
 
 const AllProjectsPage: React.FC = () => {
+  const filterOptions = useMemo(() => {
+    const tags = new Set<string>();
+    projects.forEach((project) => {
+      project.techStack?.forEach((tech) => tags.add(tech));
+    });
+    return ['All', ...Array.from(tags).sort((a, b) => a.localeCompare(b))];
+  }, []);
+
+  const [activeFilter, setActiveFilter] = useState<string>('All');
+
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === 'All') {
+      return projects;
+    }
+
+    return projects.filter((project) => project.techStack?.includes(activeFilter));
+  }, [activeFilter]);
+
+  const totalProjects = projects.length;
+  const totalFocusAreas = filterOptions.length - 1;
+
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -57,8 +78,62 @@ const AllProjectsPage: React.FC = () => {
           All Projects
         </motion.h1>
 
+        <motion.p
+          className="max-w-3xl mx-auto text-center text-lg text-gray-600 dark:text-gray-300 mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
+          Explore a curated collection of case studies, experiments, and production builds spanning data engineering, full-stack
+          products, and research prototypes.
+        </motion.p>
+
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-300 mb-8"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          <div className="px-4 py-2 bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-lg shadow-sm">
+            <span className="font-semibold text-gray-900 dark:text-gray-100 mr-1">{totalProjects}</span>
+            projects
+          </div>
+          {totalFocusAreas > 0 && (
+            <div className="px-4 py-2 bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-lg shadow-sm">
+              Focus areas across <span className="font-semibold text-gray-900 dark:text-gray-100">{totalFocusAreas}</span> tech
+              stacks
+            </div>
+          )}
+        </motion.div>
+
+        <motion.div
+          className="flex flex-wrap justify-center gap-3 mb-10"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.45, duration: 0.5 }}
+        >
+          {filterOptions.map((option) => {
+            const isActive = option === activeFilter;
+
+            return (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setActiveFilter(option)}
+                className={`px-4 py-2 rounded-full border transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 ${
+                  isActive
+                    ? 'bg-indigo-600 text-white border-indigo-600 shadow'
+                    : 'bg-white/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-200 border-gray-200 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-gray-700'
+                }`}
+              >
+                {option}
+              </button>
+            );
+          })}
+        </motion.div>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12 pb-4"
           initial="hidden"
           animate="visible"
           variants={{
@@ -66,9 +141,9 @@ const AllProjectsPage: React.FC = () => {
             visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } }
           }}
         >
-          {projects.map((project) => (
-            <motion.div 
-              key={project.id} 
+          {filteredProjects.map((project) => (
+            <motion.div
+              key={project.id}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 }
