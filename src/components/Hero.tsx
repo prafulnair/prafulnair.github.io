@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="relative z-10 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500 dark:text-indigo-300 mb-4">
-          Cloud-native engineer
+          Software Engineer
         </p>
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 text-gray-900 dark:text-gray-100">
           Hello, I&apos;m <span className="text-indigo-600 dark:text-indigo-400">Praful</span>
@@ -58,21 +58,21 @@ const Hero: React.FC = () => {
         </div>
         <div className="mt-12 flex flex-col gap-6 text-left sm:flex-row sm:justify-center sm:text-center">
           <div className="flex-1">
-            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">5+</p>
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">7+</p>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-              Cloud-native projects shipped across web, mobile, and infrastructure.
+              Production features across service backends, API endpoints, and build/test automation pipelines.
             </p>
           </div>
           <div className="flex-1">
-            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">99.9%</p>
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">20+</p>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-              Reliability targets met by designing fault-tolerant, observable systems.
+              Scripts and tools that have reduced manual toil and improved developer productivity.
             </p>
           </div>
           <div className="flex-1">
-            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">3x</p>
+            <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">∞</p>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-              Delivery acceleration for teams through automation and streamlined tooling.
+              Curiosity and drive to learn new tools, frameworks, and systems. Always eager to take on new challenges.
             </p>
           </div>
         </div>
