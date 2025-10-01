@@ -139,7 +139,7 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={`${darkMode ? 'dark' : ''} min-h-screen bg-surface text-default`}>
       <Header onToggleDarkMode={handleDarkModeToggle} darkMode={darkMode} />
 
       <AnimatePresence mode="wait">
