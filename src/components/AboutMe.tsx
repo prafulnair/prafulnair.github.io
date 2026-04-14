@@ -79,7 +79,7 @@ const skillIcons: { [key: string]: string } = {
                 Praful Nair
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                New Grad, Software Engineer
+                Software Engineer
               </p>
             </div>
             <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1 mt-4">
@@ -193,19 +193,43 @@ Later, I moved to Montreal to pursue a Master’s in Applied Computer Science at
         </h2>
         <div className="relative border-l border-gray-300 dark:border-gray-700">
 
-          {/* 2016–2021: BE in Computer Engineering */}
+          {/* 2025-2026: Software Engineer at US Mobile */}
           <div className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
                          rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2016–2021 — Started my Bachelor&apos;s in Computer Engineering
+              2025 (Dec) – 2026 (Apr) — Software Engineer, US Mobile
             </h3>
             <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Joined Pillai College of Engineering, Mumbai University, specialized
-              in research and production Honeypots and advanced system security.
-              Topped University in Applied Physics, 2 Best Project Awards, 2 Minor
-              Internships in Cyber Security, 3rd Place in Technical Paper
-              Presentation Competition.
+              Built backend systems for telecom services including a self-serve add-on management
+              feature and an enhanced tax calculation flow. Wrote MongoDB aggregation pipelines
+              for production data migrations and performed on-call duties.
+            </p>
+          </div>
+
+          {/* 2024: Intern Developer at Valsoft */}
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                         rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2024 (Sep–Dec) — Intern Developer, Valsoft
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              Enhanced NetSuite-based ERP and developed FeatureHub, a platform for
+              feature requests and issue tracking.
+            </p>
+          </div>
+
+          {/* 2022–2024: Masters at Concordia */}
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                         rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2022–2024 — Master&apos;s in Applied Computer Science
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              Concordia University, Montreal. Served as a Teaching Assistant (2023),
+              managing over 14 teams on web app development. Graduated with a 3.65 GPA.
             </p>
           </div>
 
@@ -223,29 +247,19 @@ Later, I moved to Montreal to pursue a Master’s in Applied Computer Science at
             </p>
           </div>
 
-          {/* 2022–2024: Masters at Concordia */}
+          {/* 2016–2021: BE in Computer Engineering */}
           <div className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
                          rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2022–2024 — Master&apos;s in Applied Computer Science
+              2016–2021 — Started my Bachelor&apos;s in Computer Engineering
             </h3>
             <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Concordia University, Montreal. Served as a Teaching Assistant (2023),
-              managing over 14 teams on web app development. Graduated with a 3.65 GPA.
-            </p>
-          </div>
-
-          {/* 2024: Intern Developer at Valsoft */}
-          <div className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
-                         rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              2024 (Sep–Dec) — Intern Developer, Valsoft
-            </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-              Enhanced NetSuite-based ERP and developed FeatureHub, a platform for
-              feature requests and issue tracking. Looking forward to full-time roles next.
+              Joined Pillai College of Engineering, Mumbai University, specialized
+              in research and production Honeypots and advanced system security.
+              Topped University in Applied Physics, 2 Best Project Awards, 2 Minor
+              Internships in Cyber Security, 3rd Place in Technical Paper
+              Presentation Competition.
             </p>
           </div>
         </div>
