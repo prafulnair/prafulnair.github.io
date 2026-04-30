@@ -39,8 +39,7 @@ const Education: React.FC = () => {
       with the line provisioning service. Developed an enhanced tax calculation flow at checkout,
       replacing a flat-rate model with a granular, item-level tax engine integrated with a
       third-party tax service. Wrote MongoDB aggregation pipelines (Bash, Python) to migrate
-      production data and normalize inconsistent field types. Performed on-call duty resolving
-      production bugs. Leveraged AI-powered development tools for planning and implementation.
+      production data and normalize inconsistent field types. Resolved production bugs. Leveraged AI-powered development tools for planning and implementation.
     </p>
   </div>
 
