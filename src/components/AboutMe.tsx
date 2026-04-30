@@ -13,14 +13,17 @@ const skillIcons: { [key: string]: string } = {
     Flask: "devicon-flask-original",
     Django: "devicon-django-plain",
     Java: "devicon-java-plain",
+    "Java Springboot": "devicon-spring-original-wordmark",
+    Kotlin: "devicon-kotlin-plain-wordmark",
     JavaScript: "devicon-javascript-plain",
     React: "devicon-react-original",
     NodeJS: "devicon-nodejs-plain",
-    Vite: "devicon-vitejs-plain", // Devicon doesn’t have a Vite icon, might omit or find an alternative
+    Vite: "devicon-vitejs-plain",
     HTML: "devicon-html5-plain",
     CSS: "devicon-css3-plain",
-    "Tailwind CSS": "devicon-tailwindcss-original", // Devicon doesn’t have Tailwind (there’s an unofficial icon)
     Docker: "devicon-docker-plain",
+    Podman: "devicon-podman-plain-wordmark",
+    MongoDB: "devicon-mongodb-plain-wordmark",
     GCP: "devicon-googlecloud-plain",
     AWS: "devicon-amazonwebservices-plain-wordmark",
     Pandas: "devicon-pandas-plain-wordmark",
@@ -28,27 +31,34 @@ const skillIcons: { [key: string]: string } = {
     BitBucket: "devicon-bitbucket-original-wordmark",
     PostgreSQL: "devicon-postgresql-plain-wordmark",
     "SQL Alchemy": "devicon-sqlalchemy-plain",
+    "Claude Code": "",
+    "AI Development": "",
   };
   const skills = [
     'Python',
     'Flask',
     'Django',
     'Java',
+    'Java Springboot',
+    'Kotlin',
     'JavaScript',
     'React',
     'NodeJS',
     'Vite',
     'HTML',
     'CSS',
-    'Tailwind CSS',
     'Docker',
+    'Podman',
+    'MongoDB',
     'GCP',
     'AWS',
     'Pandas',
     'Git',
     'BitBucket',
     'PostgreSQL',
-    'SQL Alchemy'
+    'SQL Alchemy',
+    'Claude Code',
+    'AI Development'
   ];
 
   return (
@@ -79,7 +89,7 @@ const skillIcons: { [key: string]: string } = {
                 Praful Nair
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                AI Software Engineer @ Valstone (Shop Data Systems)
+                AI Software Engineer 
               </p>
             </div>
             <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1 mt-4">
