@@ -79,7 +79,7 @@ const skillIcons: { [key: string]: string } = {
                 Praful Nair
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Software Engineer
+                AI Software Engineer @ Valstone (Shop Data Systems)
               </p>
             </div>
             <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1 mt-4">
