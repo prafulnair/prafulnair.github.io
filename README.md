@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Praful Nair's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website showcasing my experience, projects, and technical skills as an AI Software Engineer based in Montreal.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'm passionate about building scalable and reliable systems that solve real-world problems. My experience spans backend development, AI/ML integration, and cloud technologies across companies like US Mobile and Valsoft.
 
-## Expanding the ESLint configuration
+### Experience
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Software Engineer at US Mobile** (Dec 2025 - Apr 2026)
+  - Built backend systems for telecom services
+  - Developed self-serve add-on management features
+  - MongoDB aggregation pipeline optimization
+  
+- **Intern Developer at Valsoft** (Sep - Dec 2024)
+  - Enhanced NetSuite-based ERP systems
+  - Developed FeatureHub platform for feature requests and issue tracking
 
-- Configure the top-level `parserOptions` property like this:
+- **Teaching Assistant at Concordia University** (2023)
+  - Managed 14+ teams on web application development
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Education
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Master's in Applied Computer Science** - Concordia University, Montreal (2024) - GPA: 3.65
+- **Bachelor's in Computer Engineering** - Pillai College of Engineering, Mumbai University (2021) - GPA: 8.42
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technical Skills
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Languages**: Python, Java, JavaScript, Kotlin, HTML, CSS
+- **Frameworks**: Flask, Django, React, Spring Boot, Node.js
+- **Databases**: PostgreSQL, MongoDB
+- **Tools & Platforms**: Docker, Podman, AWS, GCP, Git
+- **Specializations**: AI Development, Claude Code, Data Analysis (Pandas)
+
+## Built With
+
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+
+---
+
+📧 **Get in touch**: [prafulworkspace@gmail.com](mailto:prafulworkspace@gmail.com)

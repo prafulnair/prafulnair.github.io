@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 const lines = [
   "$ whoami", 
-  "$ > Praful Nair - Software Engineer & Problem Solver", 
-  "$ > Based in Montreal, QC | Building scalable, efficient software"
+  "$ > Praful Nair - AI Software Engineer", 
+  "$ > Based in Montreal, QC, Canada"
 ];
 const TerminalBanner: React.FC = () => {
   const [typedText, setTypedText] = useState<string>("");
