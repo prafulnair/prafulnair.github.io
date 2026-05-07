@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="relative z-10 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500 dark:text-indigo-300 mb-4">
-          Software Engineer
+          AI Software Engineer
         </p>
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 text-gray-900 dark:text-gray-100">
           Hello, I&apos;m <span className="text-indigo-600 dark:text-indigo-400">Praful</span>

@@ -12,17 +12,17 @@ const Education: React.FC = () => {
   </h2> */}
 <div className="relative border-l border-gray-300 dark:border-gray-700">
 
-  {/* Current / Open to New Opportunities */}
+  {/* Present: AI Software Engineer at Valstone / Shop Data */}
   <div className="mb-10 ml-6">
     <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
                      rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-      Present – Open to New Opportunities
+      May 2026 – Present – AI Software Engineer at Valstone / Shop Data
     </h3>
     <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-      Looking to leverage my professional experience and strong software development
-      foundation in my next role. Ready to tackle new challenges and continue growing
-      as a software engineer.
+      Working with the Shop Data team as an AI Software Engineer, employed through Valstone.
+      Building AI-powered solutions and leveraging modern development practices to deliver
+      impactful features.
     </p>
   </div>
 

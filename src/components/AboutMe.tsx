@@ -203,6 +203,19 @@ Later, I moved to Montreal to pursue a Master’s in Applied Computer Science at
         </h2>
         <div className="relative border-l border-gray-300 dark:border-gray-700">
 
+          {/* 2026-Present: AI Software Engineer at Valstone / Shop Data */}
+          <div className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600
+                         rounded-full -left-3 ring-4 ring-white dark:ring-gray-900"></span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              2026 (May) – Present — AI Software Engineer, Valstone / Shop Data
+            </h3>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-300">
+              Working with the Shop Data team as an AI Software Engineer, building AI-powered
+              solutions and leveraging modern development practices.
+            </p>
+          </div>
+
           {/* 2025-2026: Software Engineer at US Mobile */}
           <div className="mb-10 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-indigo-500 dark:bg-indigo-600

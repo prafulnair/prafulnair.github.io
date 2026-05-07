@@ -4,15 +4,19 @@ A modern, responsive personal portfolio website showcasing my experience, projec
 
 ## About
 
-I'm passionate about building scalable and reliable systems that solve real-world problems. My experience spans backend development, AI/ML integration, and cloud technologies across companies like US Mobile and Valsoft.
+I'm passionate about building scalable and reliable systems that solve real-world problems. My experience spans backend development, AI/ML integration, and cloud technologies across companies like Valstone/Shop Data, US Mobile, and Valsoft.
 
 ### Experience
+
+- **AI Software Engineer at Valstone / Shop Data** (May 2026 - Present)
+  - Working with the Shop Data team building AI-powered solutions
+  - Leveraging modern development practices and AI tools
 
 - **Software Engineer at US Mobile** (Dec 2025 - Apr 2026)
   - Built backend systems for telecom services
   - Developed self-serve add-on management features
   - MongoDB aggregation pipeline optimization
-  
+
 - **Intern Developer at Valsoft** (Sep - Dec 2024)
   - Enhanced NetSuite-based ERP systems
   - Developed FeatureHub platform for feature requests and issue tracking
