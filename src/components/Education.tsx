@@ -20,9 +20,8 @@ const Education: React.FC = () => {
       May 2026 – Present – AI Software Engineer at Valstone / Shop Data
     </h3>
     <p className="text-base font-normal text-gray-500 dark:text-gray-300">
-      Working with the Shop Data team as an AI Software Engineer, employed through Valstone.
-      Building AI-powered solutions and leveraging modern development practices to deliver
-      impactful features.
+      Working with the Shop Data team as an AI Software Engineer, building AI-powered
+      solutions and leveraging modern development practices to deliver impactful features.
     </p>
   </div>
 
